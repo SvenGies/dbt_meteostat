@@ -3,7 +3,7 @@ SELECT
 	,cw
 	,round(avg(avg_temp_c), 2) AS avg_temp_w
 	,min(min_temp_c) AS min_temp_w
-	,max(max_temp_c) AS min_temp_w
+	,max(max_temp_c) AS max_temp_w
 	,round(avg(precipitation_mm),2) AS avg_precipitation_w
 	,avg(max_snow_mm) AS avg_snow_w
 	,round(avg(avg_wind_direction),2) AS avg_wind_direction_w
