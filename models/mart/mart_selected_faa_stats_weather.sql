@@ -8,7 +8,7 @@ SELECT
 	,pws.avg_wind_direction
 	,pws.avg_wind_speed_kmh AS avg_wind_speed
 	,pws.wind_peakgust_kmh AS wind_peakgust
-FROM mart_faa_stats mfs
-JOIN prep_weather_daily pws
+FROM {{ref(mart_faa_stats)}} mfs
+JOIN {{ref(prep_weather_daily)}} pws
   ON mfs.faa = pws.airport_code
 ORDER BY faa, date
