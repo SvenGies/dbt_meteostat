@@ -27,7 +27,7 @@ select
 	,s.nunique_tail_nr
 	,s.nunique_airline
 	,s.avg_elapsed_time
-	,round(s.avg_delay, 2)
+	,s.avg_delay
 	,s.max_delay
 	,s.min_delay
 	,s.cancelled_tot
